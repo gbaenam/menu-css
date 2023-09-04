@@ -19,7 +19,7 @@ a {
 }
 
 .nav {
-    height: 80px;
+    height: 5rem;
     display: flex;
     padding: 0 2.5rem;
     align-items: center;
