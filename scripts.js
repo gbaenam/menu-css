@@ -1,8 +1,9 @@
 
-const navMenu = document.querySelector('.nav__item-wrapper'),
+const menuPadding = () => {
+    document.querySelector('.nav__menu').style.padding =
+    `calc(${(innerHeight-document.querySelector('.nav__item-wrapper').clientHeight)/2}px) 2.5rem 0`
+}
+menuPadding()
+addEventListener('resize', menuPadding)
 
-linkClose = document.querySelector('.nav__link-close'),
 
-itemWrapper = document.querySelector('.nav__item-wrapper')
-
-navMenu.style.paddingTop = `calc(${((innerHeight-itemWrapper.clientHeight)/2)-linkClose.clientHeight}px)`

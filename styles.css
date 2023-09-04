@@ -37,11 +37,8 @@ a {
     width: 100vw;
     height: 100vh;
     display: flex;
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
     position: fixed;
     flex-direction: column;
-    /* justify-content: center; */
     transition: clip-path .5s;
     background-color: #11001c;
     clip-path: circle(0 at top left);
@@ -60,6 +57,7 @@ a {
     margin-bottom: 3rem;
 }
 
+.nav__menu li:first-child,
 .nav__menu li:last-child {
     margin-bottom: 0;
 }
